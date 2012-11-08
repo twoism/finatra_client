@@ -99,6 +99,12 @@
     </dependency>
 
     <dependency>
+      <artifactId>jerkson_2.9.2</artifactId>
+      <version>0.7.0</version>
+      <groupId>io.backchat.jerkson</groupId>
+    </dependency>
+
+    <dependency>
       <groupId>org.scalatest</groupId>
       <artifactId>scalatest_${scala.version}</artifactId>
       <version>1.7.2</version>
