@@ -1,0 +1,15 @@
+// class TweetParser extends Parser[Tweet] {
+//   def parseCollection(response: Future[Response]) = {
+//     response map { resp =>
+//       parse[List[Tweet]](resp.contentString)
+//     }
+//   }
+// }
+
+// object ParserFactory {
+//   def apply(typ: String) = {
+//     typ match {
+//       case "Tweet" => new TweetParser
+//     }
+//   }
+// }
