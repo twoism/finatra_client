@@ -180,7 +180,7 @@
           <launchers>
             <launcher>
               <id>main</id>
-              <mainClass>com.twitter.http_client.App</mainClass>
+              <mainClass>com.twitter.finatra_client.App</mainClass>
             </launcher>
             <!-- you could define other launcher -->
           </launchers>

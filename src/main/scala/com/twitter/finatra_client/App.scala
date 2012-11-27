@@ -1,4 +1,4 @@
-package com.twitter.http_client
+package com.twitter.finatra_client
 
 import com.twitter.finagle.http.{Response, Request}
 import com.twitter.util.Future
@@ -6,7 +6,7 @@ import com.codahale.jerkson.Json
 
 case class Tweet(status: String, screen_name: String)
 
-class TweetClient extends HttpClient {
+class TweetClient extends FinatraClient {
   val baseURI = "localhost:4567"
 
   def tweets(params: Tuple2[String, String]*) = {
