@@ -1,20 +1,19 @@
 package com.twitter.http_client
 
 import org.jboss.netty.handler.codec.http._
-import com.twitter.finagle.http.{ParamMap, Response, Request}
+import com.twitter.finagle.http.{HeaderMap, ParamMap, Response, Request}
 import com.twitter.finagle.Service
 import com.twitter.util.Future
 
 class FinatraHttpRequest(val client: Service[Request, Response]) {
-  //var _headers:  Tuple2[String, String]   = Map.empty
-  var _params:   Seq[Tuple2[String, String]]   = List.empty
-  var path:     String                = "/"
-  var method:   HttpMethod            = HttpMethod.GET
-  var httpVersion: HttpVersion        = HttpVersion.HTTP_1_1
+  var _headers:  Seq[Tuple2[String, String]]   = Seq.empty
+  var _params:   Seq[Tuple2[String, String]]   = Seq.empty
+  var _path:     String                = "/"
+  var _method:   HttpMethod            = HttpMethod.GET
+  var httpVersion: HttpVersion         = HttpVersion.HTTP_1_1
 
-  def get(path: String): FinatraHttpRequest = {
-    this.path   = path
-    this.method = HttpMethod.GET
+  def method(theMethod: HttpMethod) = {
+    this._method = theMethod
     this
   }
 
@@ -23,10 +22,15 @@ class FinatraHttpRequest(val client: Service[Request, Response]) {
     this
   }
 
-//  def headers(theHeaders: Map[String, String]) = {
-//    this._headers = theHeaders
-//    this
-//  }
+  def path(thePath: String) = {
+    this._path = thePath
+    this
+  }
+
+  def headers(theHeaders: Tuple2[String, String]*) = {
+    this._headers = theHeaders
+    this
+  }
 
   def fetch[T](callback: Response => T):Future[T] = {
     client(build) map { r =>
@@ -35,7 +39,17 @@ class FinatraHttpRequest(val client: Service[Request, Response]) {
   }
 
   def build = {
-    val request = Request(path, _params:_*)
+    val request = Request(_path, _params:_*)
+    request.method = this._method
+    if (request.method == HttpMethod.POST) {
+      val encoder = new QueryStringEncoder("")
+      this._params.foreach { case (key, value) =>
+        encoder.addParam(key, value)
+      }
+      request.setContentString(encoder.toString)
+    }
+
+    this._headers.foreach(h => request.httpMessage.addHeader(h._1, h._2))
     request
   }
 }

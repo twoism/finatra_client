@@ -16,6 +16,7 @@ abstract class HttpClient {
       .hostConnectionLimit(connectionLimit)
       .build()
 
-  def get(path: String) = new FinatraHttpRequest(client).get(path)
+  def get(path: String)   = new FinatraHttpRequest(client).method(HttpMethod.GET).path(path)
+  def post(path: String)  = new FinatraHttpRequest(client).method(HttpMethod.POST).path(path)
 
 }
