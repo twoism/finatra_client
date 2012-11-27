@@ -6,7 +6,7 @@ get("/tweets") do
   [
     {
       :status => 'howdy!',
-      :screen_name => 'twoism'
+      :screen_name => params["screen_name"]
     }
   ].to_json
 end
