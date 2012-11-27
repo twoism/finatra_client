@@ -2,16 +2,18 @@ package com.twitter.http_client
 
 import com.twitter.finagle.http.{Response, Request}
 import com.twitter.util.Future
-import com.codahale.jerkson.Json._
-
-case class Tweet(status: String, screen_name: String)
+import com.codahale.jerkson.Json
 
 class TweetClient extends HttpClient {
+
+  case class Tweet(status: String, screen_name: String)
+
   val baseURI = "localhost:4567"
 
-  def tweets = {
-    get("/tweets") map { resp =>
-      parse[List[Tweet]](resp.contentString)
+  def tweets(params: Map[String, String]=Map.empty) = {
+    get("/tweets").fetch { resp =>
+      println(resp.contentString)
+      //Json.parse[List[Tweet]](resp.contentString)
     }
   }
 }
@@ -19,14 +21,11 @@ class TweetClient extends HttpClient {
 object App {
   def main(args: Array[String]) {
     val client = new TweetClient
-    client.tweets.onSuccess { tweets =>
 
-      println("**************************************")
+    client.tweets().onSuccess { tweets =>
       println(tweets)
-      println("**************************************")
-
-    } onFailure { _ =>
-      println("Failed!")
+    } onFailure { e =>
+      e.printStackTrace()
     }
 
   }
