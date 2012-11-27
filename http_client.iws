@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4572dfc-7213-401d-a72e-1990d241df61" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/http_client.iws" afterPath="$PROJECT_DIR$/http_client.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/com/twitter/http_client/App.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/twitter/http_client/App.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/com/twitter/http_client/HttpClient.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/twitter/http_client/HttpClient.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/com/twitter/http_client/Parser.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/twitter/http_client/Parser.scala" />
-    </list>
+    <list default="true" id="a4572dfc-7213-401d-a72e-1990d241df61" name="Default" comment="" />
     <ignored path="http_client.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -66,25 +61,70 @@
       <file leaf-file-name="App.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/twitter/http_client/App.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="8" selection-start="414" selection-end="414" vertical-scroll-proportion="0.4362416">
+            <state line="3" column="30" selection-start="115" selection-end="115" vertical-scroll-proportion="0.031948883">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpClient.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/twitter/http_client/HttpClient.scala">
+      <file leaf-file-name="Codec.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/twitter/finagle-http/5.3.9/finagle-http-5.3.9-sources.jar!/com/twitter/finagle/http/Codec.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="54" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0">
+            <state line="103" column="21" selection-start="3851" selection-end="3851" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FinatraHttpRequest.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/twitter/http_client/FinatraHttpRequest.scala">
+      <file leaf-file-name="Request.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/twitter/finagle-http/5.3.9/finagle-http-5.3.9-sources.jar!/com/twitter/finagle/http/Request.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="46" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0">
+            <state line="157" column="7" selection-start="4772" selection-end="4772" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Message.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/twitter/finagle-http/5.3.9/finagle-http-5.3.9-sources.jar!/com/twitter/finagle/http/Message.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="2" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpResponse.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty/3.5.5.Final/netty-3.5.5.Final-sources.jar!/org/jboss/netty/handler/codec/http/HttpResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="43" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpMessage.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty/3.5.5.Final/netty-3.5.5.Final-sources.jar!/org/jboss/netty/handler/codec/http/HttpMessage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="139" column="17" selection-start="4383" selection-end="4383" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Service.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/twitter/finagle-core/5.3.9/finagle-core-5.3.9-sources.jar!/com/twitter/finagle/Service.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="20" selection-start="893" selection-end="893" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientBuilder.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/twitter/finagle-core/5.3.9/finagle-core-5.3.9-sources.jar!/com/twitter/finagle/builder/ClientBuilder.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="298" column="6" selection-start="13313" selection-end="13313" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -113,9 +153,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/twitter/http_client/HttpRequest.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/twitter/http_client/HttpClient.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/twitter/http_client/FinatraHttpRequest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/twitter/http_client/App.scala" />
       </list>
     </option>
@@ -153,10 +190,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="4" />
+    <option name="x" value="100" />
     <option name="y" value="22" />
-    <option name="width" value="1271" />
-    <option name="height" value="744" />
+    <option name="width" value="1180" />
+    <option name="height" value="774" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -184,6 +221,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -270,16 +317,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="App.scala" />
               <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -512,8 +549,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="22" width="1271" height="744" extended-state="0" />
-    <editor active="true" />
+    <frame x="100" y="22" width="1180" height="774" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -523,16 +560,16 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30497593" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33447567" sideWeight="0.6705539" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24448079" sideWeight="0.6950241" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17314488" sideWeight="0.6707504" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944608" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32924962" sideWeight="0.9951259" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3062787" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -601,6 +638,11 @@
         <state line="103" column="21" selection-start="3851" selection-end="3851" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/twitter/finagle-http/5.3.9/finagle-http-5.3.9-sources.jar!/com/twitter/finagle/http/Request.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="157" column="7" selection-start="4772" selection-end="4772" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/twitter/finagle-http/5.3.9/finagle-http-5.3.9-sources.jar!/com/twitter/finagle/http/Message.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="2" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0" />
@@ -621,42 +663,21 @@
         <state line="32" column="20" selection-start="893" selection-end="893" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/twitter/finagle-http/5.3.9/finagle-http-5.3.9-sources.jar!/com/twitter/finagle/http/Request.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="7" selection-start="4772" selection-end="4772" vertical-scroll-proportion="0.032626428">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/twitter/finagle-core/5.3.9/finagle-core-5.3.9-sources.jar!/com/twitter/finagle/builder/ClientBuilder.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="298" column="6" selection-start="13313" selection-end="13313" vertical-scroll-proportion="0.032626428">
-          <folding />
-        </state>
+        <state line="298" column="6" selection-start="13313" selection-end="13313" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="16" selection-start="3001" selection-end="3001" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/twitter/http_client/FinatraHttpRequest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="46" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/twitter/http_client/HttpClient.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="54" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0">
+        <state line="107" column="16" selection-start="3001" selection-end="3001" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/twitter/http_client/App.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="8" selection-start="414" selection-end="414" vertical-scroll-proportion="0.4362416">
+        <state line="3" column="30" selection-start="115" selection-end="115" vertical-scroll-proportion="0.031948883">
           <folding />
         </state>
       </provider>
