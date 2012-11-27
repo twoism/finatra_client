@@ -11,7 +11,7 @@ class TweetClient extends HttpClient {
   val baseURI = "localhost:4567"
 
   def tweets(params: Tuple2[String, String]*) = {
-    get("/tweets").param(params:_*) { resp =>
+    get("/tweets").params(params:_*).fetch { resp =>
       Json.parse[List[Tweet]](resp.contentString)
     }
   }

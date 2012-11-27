@@ -18,7 +18,7 @@ class FinatraHttpRequest(val client: Service[Request, Response]) {
     this
   }
 
-  def param(theParams: Tuple2[String,String]*) = {
+  def params(theParams: Tuple2[String,String]*) = {
     this._params = theParams
     this
   }
